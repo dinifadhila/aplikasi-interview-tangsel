@@ -1,0 +1,67 @@
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  
+    <!-- The Grid -->
+    <div class="w3-row-padding" *ngFor="let e of product, let i = index">
+    
+      <!-- Left Column -->
+      <div class="w3-third">
+      
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container" >
+            <img src="{{e.avatar}}" style="width:100%" alt="Avatar">
+            <div class="w3-display-bottomleft w3-container w3-text-black">
+              <h2>{{e.name}}</h2>
+            </div>
+          </div>
+          <div class="w3-container">
+            <p><i class=" w3-margin-right w3-large w3-text-teal"></i>{{e.description}}</p>
+            <p><i class=" w3-margin-right w3-large w3-text-teal"></i>{{e.package}}</p>
+            <p><i class=" w3-margin-right w3-large w3-text-teal"></i>{{e.data}}</p>
+            <hr>
+  
+            <br>
+  
+            <br>
+          </div>
+        </div><br>
+  
+      <!-- End Left Column -->
+      </div>
+  
+      <!-- Right Column -->
+      <div class="w3-twothird">
+      
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>List Product</h2>
+          <div class="w3-container">
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>NAME</th>
+                  <th>PRICE</th>
+                  <th>DISCOUNT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{e.id}}</td>
+                  <td>{{e.name}}</td>
+                  <td>{{e.price}}</td>
+                  <td>{{e.discount}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+        </div>
+  
+      <!-- End Right Column -->
+      </div>
+      
+    <!-- End Grid -->
+    </div>
+    
+    <!-- End Page Container -->
+  </div>
